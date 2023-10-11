@@ -23,10 +23,10 @@ nav {
 ul{
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   list-style: none;
-  gap: 27px;
+  gap: 10%;
   padding: 0;
 }
 
@@ -80,6 +80,16 @@ ul > li > a:active {
   padding-left: 40px;
   padding-top: 40px;
 }
+
+#root > nav > ul > li > a > span {
+  text-transform: lowercase;
+  letter-spacing: normal;
+  text-align: center;
+  font-weight: 400;
+  line-height: 13px;
+  font-family: 'roboto',sans-serif;
+  color: #c6c6ca;
+} 
 
 .title-submenu {
   display: flex;

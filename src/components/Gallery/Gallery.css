@@ -1,0 +1,256 @@
+.gallery-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+
+.gallery-image img {
+  max-width: 600px;
+  height: auto;
+}
+
+.gallery-image {
+  position: relative;
+}
+
+.gallery-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 300px;
+  height: 600px;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+}
+
+.slider-thumbnail {
+  width: 162px;
+  height: 162px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.slider-thumbnail img {
+  max-width: 100%;
+  height: auto;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  width: 35px;
+  height: 35px;
+  background-image: url("../../assets/leftArrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.arrow-left-gray {
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  width: 35px;
+  height: 35px;
+  background-image: url("../../assets/leftArrowGray.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  width: 35px;
+  height: 35px;
+  background-image: url("../../assets/rightArrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.arrow-right-gray {
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  width: 35px;
+  height: 35px;
+  background-image: url("../../assets/rightArrowGray.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.arrow-up {
+  position: absolute;
+  top: 0%;
+  left: 9%;
+  width: 50px;
+  height: 50px;
+  background-image: url("../../assets/upArrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 0%;
+  left: 9%;
+  width: 50px;
+  height: 50px;
+  background-image: url("../../assets/downArrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+}
+
+
+@media (max-width: 1024px) {
+
+  .gallery-container {
+    flex-direction: column;
+    width: 50%;
+    order: 1;
+    overflow: hidden;
+  }
+
+  .gallery-slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 163%; 
+    height: 105px; 
+    overflow: hidden;
+    order: 2;
+  }
+
+  .gallery-image img {
+    max-width: 450px;
+    height: auto;
+  }
+
+  .slider-thumbnail {
+    width: auto;
+    height: auto;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .slider-thumbnail img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .arrow-down {
+    transform: rotate(90deg);
+    bottom: 10%;
+    left: -1%;
+  }
+
+  .arrow-up {
+    transform: rotate(90deg);
+    top: 82%;
+    left: 91%;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-image img {
+    max-width: 350px;
+  }
+
+  .gallery-slider {
+    width: 230%;
+    margin-top: 20px;
+  }
+
+  .arrow-down {
+    transform: rotate(90deg);
+    bottom: 16%;
+    left: -1%;
+  }
+
+  .arrow-up {
+    transform: rotate(90deg);
+    top: 76%;
+    left: 91%;
+  }
+}
+
+@media (max-width: 425px) {
+  .gallery-slider {
+    display: none;
+  }
+
+  div.container-gallery-infoproduct > div.gallery-container {
+    width: 100%;
+  }
+
+  .arrow-down {
+    display: none;
+  }
+
+  .arrow-up {
+    display: none;
+  }
+
+  .arrow-right {
+    right: 6px;
+  }
+
+  .arrow-left {
+    left: 6px;
+  }
+
+  .arrow-left-gray {
+    left: 6px;
+  }
+
+  .arrow-right-gray {
+    right: 6px;
+  }
+
+  div.container-gallery-infoproduct > div.gallery-container > div.gallery-image > img {
+    max-width: 425px;
+  }
+
+}
+
+

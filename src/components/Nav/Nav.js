@@ -37,9 +37,9 @@ function Nav() {
             </ul>
           </li>
           <li><a href="/#">HOMBRE</a></li>
-          <li><a href="/#">NUEVOS<br/>lanzamientos</a></li>
-          <li><a href="/#">ROPA<br/>deportiva</a></li>
-          <li><a href="/#">OFERTAS<br/>de temporada</a></li>
+          <li><a href="/#">NUEVOS<br/><span>lanzamientos</span></a></li>
+          <li><a href="/#">ROPA<br/><span>deportiva</span></a></li>
+          <li><a href="/#">OFERTAS<br/><span>de temporada</span></a></li>
         </ul>
         <button className="btn-search">
           Encuentra tu preferido
