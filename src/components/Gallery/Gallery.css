@@ -28,8 +28,8 @@
 }
 
 .slider-thumbnail {
-  width: 162px;
-  height: 162px;
+  width: 165px;
+  height: 247px;
   margin-right: 10px;
   cursor: pointer;
 }
@@ -42,7 +42,7 @@
 .arrow-left {
   position: absolute;
   top: 50%;
-  left: -15px;
+  left: -1%;
   width: 35px;
   height: 35px;
   background-image: url("../../assets/leftArrow.png");
@@ -58,7 +58,7 @@
 .arrow-left-gray {
   position: absolute;
   top: 50%;
-  left: -15px;
+  left: -1%;
   width: 35px;
   height: 35px;
   background-image: url("../../assets/leftArrowGray.png");
@@ -74,7 +74,7 @@
 .arrow-right {
   position: absolute;
   top: 50%;
-  right: -15px;
+  right: -1%;
   width: 35px;
   height: 35px;
   background-image: url("../../assets/rightArrow.png");
@@ -91,7 +91,7 @@
 .arrow-right-gray {
   position: absolute;
   top: 50%;
-  right: -15px;
+  right: -1%;
   width: 35px;
   height: 35px;
   background-image: url("../../assets/rightArrowGray.png");
@@ -107,7 +107,7 @@
 .arrow-up {
   position: absolute;
   top: 0%;
-  left: 9%;
+  left: 21%;
   width: 50px;
   height: 50px;
   background-image: url("../../assets/upArrow.png");
@@ -125,7 +125,7 @@
 .arrow-down {
   position: absolute;
   bottom: 0%;
-  left: 9%;
+  left: 21%;
   width: 50px;
   height: 50px;
   background-image: url("../../assets/downArrow.png");

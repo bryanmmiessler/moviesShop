@@ -2,9 +2,10 @@ import "./InfoProduct.css"
 
 import ArrowDown from '../../assets/downArrow.png'
 import HeartIcon from '../../assets/heartIcon2.png'
+import Credifin from "../Credifin/Credifin";
 
 
-function InfoProducto(props) {
+function InfoProducto() {
 
   return(
     <div className="main-container-info-producto">
@@ -14,11 +15,11 @@ function InfoProducto(props) {
         </p>
         <div className="container-reference">
           <p>STAR WARS</p>
-          <p>Ref. 236732-130908-M</p>
+          <p>Ref. 236732-130908-L</p>
         </div>
         <div className="container-price">
-          <p>$259.990</p>
-          <p>$233.991</p>
+          <p>$289.990</p>
+          <p>$202.993</p>
         </div>
         <div className="size-selector">
           <div>
@@ -31,12 +32,11 @@ function InfoProducto(props) {
         </div>
         <div className="counter-cart-container">
           <div className="counter-container">
-            <button onClick={props.decrease}>-</button>
-            <span>{props.counter}</span>
-            <button onClick={props.increase}>+</button>
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
           </div>
-          <button className="add-cart" onClick={props.addToCart}>AGREGAR A MI BOLSA</button>
-          {props.message && <p className="message">{props.message}</p>}
+          <button className="add-cart" >AGREGAR A MI BOLSA</button>
         </div>
         <div className="feature-container">
           <p>Descripción de producto</p>
@@ -62,6 +62,7 @@ function InfoProducto(props) {
           <img className="icon-heart" src={HeartIcon} alt="icon-heart" />
           <p>AGREGAR A FAVORITOS</p>
         </div>
+        <Credifin />
 
       </div>
     </div>
